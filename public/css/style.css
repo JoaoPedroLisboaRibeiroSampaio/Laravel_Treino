@@ -1,0 +1,131 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4vh;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+
+
+}
+footer > p {
+    display: inline-block;
+    width: 100%;
+
+
+}
+.Menu{
+    margin:auto;
+    
+}
+.Menu-auth{
+    padding-top: 2%;
+    top:0px;
+    left:0%;
+    position:fixed;
+    background: linear-gradient(0.25turn, #3f87a6, #8aabec, #3f87a6) no-repeat;
+    display:block;
+    width: 100%;
+    margin:0;
+    height:5vh;
+    animation:Menu-animation 1s ease-in-out forwards;
+}
+.Menu-left{
+    padding-top: 2%;
+    top:0px;
+    left:60%;
+    position:fixed;
+    display:block;
+    width: 100%;
+    margin:0;
+    height:5vh;
+    animation:Menu-animation 1s ease-out forwards;
+}
+.Menu-left > li, .Menu-auth > li {
+    color:black;
+    display:inline-block;
+    margin-right: 20px;
+}
+.Link{
+    text-decoration: none;
+    color:white;
+    padding:12px;
+    margin-bottom: 2px;
+ 
+}
+.Link:hover{
+    color:white;
+    animation:borde-animation 1s ease-in-out forwards;
+    transition:all 40ms linear;
+    text-decoration: none;
+    
+}
+
+@keyframes borde-animation
+{
+    0%{
+        opacity: 90%;
+    }
+    50%
+    {   
+        opacity: 95%;
+        background-position: 50% 100%;
+        border-bottom: 1px solid rgb(8, 129, 194);
+    }
+    100%
+    {
+        opacity: 100%;
+        font-size: 110%;
+        border-bottom: 1px solid white;
+       
+    }
+
+}
+
+@keyframes Menu-animation
+{
+    0%{
+        opacity: 0%;
+        top:-30%;
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        opacity: 90%;
+        background-position: 50% 100%;
+    }
+    100%
+    {
+       
+        opacity: 100%;
+        top:0%;
+        height: 13vh;
+        background-position: 0% 50%; 
+    }
+
+}
+.animation{
+    opacity: 0%;
+    margin: 0px 5% auto;
+    transition: all 1.1s ease-in-out;
+    animation:animation-block 1.1s ease-in-out 1.05s forwards;
+}
+@keyframes animation-block 
+{
+    0%{
+        opacity: 0%;
+        padding-top: 10%;
+    }
+    100%{
+        opacity: 100%;
+        padding-top: 0;
+        
+    }
+}
