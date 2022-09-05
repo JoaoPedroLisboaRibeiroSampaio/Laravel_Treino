@@ -20,29 +20,29 @@
 <nav class="Menu">
     <ul class="Menu-auth">
             <li>
-                <a  class="Link"  href="product/pagina">
+                <a  class="Link"  href="pagina">
                     Usuario
                 </a>
             </li>
     </ul>
         <ul class="Menu-left">
             <li>
-                <a  class="Link"  href="product/pagina">
+                <a  class="Link"  href="pagina">
                     Products
                 </a>
             </li>
             <li>
-                <a class="Link" href="product/pagina">
+                <a class="Link" href="pagina">
                     Opção 2
                 </a>
             </li>
             <li>
-                <a  class="Link"  href="product/pagina">
+                <a  class="Link"  href="pagina">
                      Opção 3
                 </a>
             </li>
             <li>
-                <a  class="Link"  href="product/pagina">
+                <a  class="Link"  href="pagina">
                     Opção 4
                 </a>
             </li> 

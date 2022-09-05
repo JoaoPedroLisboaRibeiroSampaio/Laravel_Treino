@@ -4,6 +4,7 @@
 
 @section('content')
 
-
+    <h1>ZathBell</h1>
+    
 
 @endsection

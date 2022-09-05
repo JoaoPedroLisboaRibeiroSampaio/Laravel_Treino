@@ -2,17 +2,18 @@
     font-family: 'Times New Roman', Times, serif;
 }
 footer{
-    justify-content: center;
+    font: 11px/30px "Open Sans",Arial,Helvetica,sans-serif;
+    padding: 20px 0 20px 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    background: #121212;
+    position: fixed;
+    z-index: -9999999;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 4vh;
-    background-color: rgb(49, 48, 48);
-    color: white;
-    position: absolute;
-    overflow: hidden;
-    text-align: center;
-
+    transition: all 1.1s ease-in-out;
+    animation: animation-up 1.1s ease-in-out 1.05s forwards;
 
 }
 footer > p {
@@ -126,6 +127,20 @@ footer > p {
     100%{
         opacity: 100%;
         padding-top: 0;
+        
+    }
+}
+
+@keyframes animation-up
+{
+    0%{
+        opacity: 0%;
+        bottom:-40%;
+    }
+    100%{
+        opacity: 100%;
+        bottom:0%;
+        padding: 20px 0 20px 0;
         
     }
 }

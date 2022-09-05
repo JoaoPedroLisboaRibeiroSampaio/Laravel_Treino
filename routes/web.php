@@ -13,12 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\PaginaController;
 Route::get('/', [HomeController::class,'index']);
 
-Route::get('/product/pagina/{id?}', function ($id = 1)  {
-    return view('pagina',['id'=> $id]);
-});
+Route::get('/pagina/{id?}',[PaginaController::class,'pagina']);
 
 Route::get('/product/{id?}', function ($id = '')  {
     return view('product',['id'=>$id]);
